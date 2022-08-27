@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Onboarding</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--<button class="onboarding-btn">Show Demo</button>-->
+
+    <div class="onboarding-overlay"></div>
+
+    <div class="onboarding-container">
+      <div class="content">
+        
+
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+
+            <h3>Welcome!First things first...</h3>
+            <p>
+              You can always change them later.
+            </p>
+
+            <div class="form-group has-dark">
+              <label for="name" class="control-label">Full Name</label>
+              <input id="name" class="form-control" name="name"
+              type="text" placeholder="Steve Jobs"/>
+            </div>
+            <div class="form-group has-dark">
+              <label for="name" class="control-label">Display Name</label>
+              <input id="name" class="form-control" name="name"
+              type="text" placeholder="Steve"/>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Let's set up a home for all your work</h3>
+            <p>
+              You can always create another workspace later.
+            </p>
+
+            <div class="form-group has-dark">
+              <label for="name" class="control-label">Workspace Name</label>
+              <input id="name" class="form-control" name="name"
+              type="text" placeholder="Eden"/>
+            </div>
+            <div class="form-group has-dark">
+              <label for="name" class="control-label">Workspace URL(optional)</label>
+              <input id="email" class="form-control" name="email" placeholder="a@a.com" type="email"/>
+            </div>
+            
+          </div>
+
+          <div class="step">
+          
+            <h3>Congratulations!</h3>
+            <p>
+              You have completed onboarding, you can start using the Eden!
+            </p>
+          </div>
+        </div>
+
+        <button class="next-btn">Create Workspace</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

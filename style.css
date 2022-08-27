@@ -1,0 +1,157 @@
+
+
+.onboarding-container,
+.onboarding-container * {
+  box-sizing: border-box;
+}
+
+.onboarding-container .image svg {
+  height: 150px;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.onboarding-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  
+}
+
+
+
+.onboarding-container {
+  z-index: 300;
+  position: fixed;
+  font-family: "Roboto", sans-serif;
+  left: 20%;
+  top: 10%;
+  box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.4);
+  
+}
+
+.onboarding-container.active {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.onboarding-container .content {
+  background: #fff;
+  max-width: 800px;
+  padding-top: 24px;
+  overflow: hidden;
+  height: 500px;
+}
+
+.onboarding-container .steps {
+  display: flex;
+  width: 300%;
+  height: 285px;
+  transition: all 400ms ease;
+}
+
+.onboarding-container .steps .step{
+  width: 100%;
+  height: 300px;
+}
+
+.onboarding-container .step h3 {
+  margin: 30;
+  font-size: 28px;
+  text-align: center;
+  padding: 5 32px;
+}
+
+.onboarding-container .step p {
+  
+  padding: 0 32px;
+  text-align: center;
+  color:grey;
+}
+ 
+.form-group{
+  height:20%;
+  width:100%;
+  position: relative;
+}
+
+.form-group .control-label{
+  margin-left: 30%;
+  height:30px;
+  width: 70%;
+}
+
+
+input[type=text]{
+  width: 40%;
+  height: 10%;
+  padding: 20px;
+  margin-left: 30%;
+  margin-top:-5px;
+  display: inline-block;
+  font-size: 16px;
+}    
+
+input[type=email]{
+  width: 40%;
+  height: 10%;
+  padding: 20px;
+  margin-left: 30%;
+  margin-top:-5px;
+  display: inline-block;
+  font-size: 16px;
+}   
+
+input [type=text]{
+  padding: 1px 2px;
+
+}
+
+.onboarding-container .next-btn {
+  width: 40%;
+  height: 40px;
+  margin-left: 30%;
+  margin-top: -12px;
+  padding: 10px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #654de4;
+  color: #fff;
+}
+
+.onboarding-container .skip-btn {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #636363;
+}
+
+.onboarding-container .dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10%;
+}
+
+.onboarding-container .dot {
+  width: 10px;
+  height: 10px;
+  background: #dbdbdb;
+  border-radius: 50%;
+  transition: all 400ms ease;
+}
+
+.onboarding-container .dot.active {
+  background: #654de4;
+}
